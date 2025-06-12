@@ -21,6 +21,7 @@ extension ObservableType {
      writing more consistent binding code.
 
      - parameter observer: Observer that receives events.
+     - parameter observer: Observer that receives events.
      - returns: Disposable object that can be used to unsubscribe the observer.
      */
     @available(*, deprecated, renamed: "bind(to:)")
@@ -222,12 +223,12 @@ extension ObservableType {
             fatalError()
         }
     }
-    extension UIWebView {
-        @available(*, unavailable, message: "createRxDelegateProxy is now unavailable, check DelegateProxyFactory")
-        public func createRxDelegateProxy() -> RxWebViewDelegateProxy {
-            fatalError()
-        }
-    }
+//    extension UIWebView {
+//        @available(*, unavailable, message: "createRxDelegateProxy is now unavailable, check DelegateProxyFactory")
+//        public func createRxDelegateProxy() -> RxWebViewDelegateProxy {
+//            fatalError()
+//        }
+//    }
 #endif
 
 #if os(macOS)
